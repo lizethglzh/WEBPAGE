@@ -139,7 +139,7 @@ nav ul {
 
 .boxes-link {
   font-size: 1.6rem;
-  color: rgba(255,255,255,.8);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   background-color:  #121212;
   width: 100%;
@@ -161,7 +161,7 @@ nav ul {
 .answer {
   max-height: 0;
   overflow: hidden;
-  position: relative;
+  /* position: relative; */
   background-color: #121212;
   transition: max-height 650ms;
 }
