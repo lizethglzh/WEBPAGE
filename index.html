@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
     <link rel="stylesheet" type="text/css" href="main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
     <header class="sticky">
       <nav>
         <div class="logo">
@@ -12,10 +14,10 @@
         </div>
         <div class="menu">
           <ul>
-            <li><a href="#">acerca de</a></li>
-            <li><a href="#">faq</a></li>
-            <li><a href="#">patrocinadores</a></li>
-            <li><a href="#">itinerario</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#FAQ">FAQ</a></li>
+            <li><a href="#Patrocinadores">Patrocinadores</a></li>
+            <li><a href="#SignUp/LogIn">Sign Up/Log In</a></li>
           </ul>
         </div>
       </nav>
@@ -34,24 +36,92 @@
       </div>
 
       <div class="content">
+        <div class="image">
+          <img src="web-development.png" align="right" class="center" width="900" height="700"/>
+        </div>
         <h1>
-          acerca de nosotros
+          Acerca de nosotros
         </h1>
         <p style="text-align:left;">
-          One month hack es un hackaton con duración de un mes,
+          One Month Hack es un hackathon con duración de un mes, donde se ofrecerán una serie de talleres, competencias y solución 
+          de problematicas reales presentadas por empresas de México.
         </p>
-        <p style="text-align:left;">
-          con la que comprende una serie de talleres,
-        </p>
-        <p style="text-align:left;">
-          competencias y solución de problemáticas reales
-        </p>
-        <p style="text-align:left;">
-          presentadas por empresas de México.
-        </p>
-        <img src="web-development.png" align="right" width="900" height="700" />
       </div>
+    
+
+    <div class="FAQ">
+      <div class="boxes">
+        <div class="boxes-item" id="question1">
+          <a class="boxes-link" href="#question1">
+            ¿Está abierto a todas las carreras?
+            <i class="icon ion-md-chevron-down-outline"></i>
+            <i class="icon ion-md-remove"></i>
+          </a>
+          <div class="answer">
+            <p> 
+            Sí, cualquier persona que tenga interés por aportar a la sociedad en estos momentos es más que bienvenida.
+            </p>
+          </div>
+        </div>
+
+        <div class="boxes-item" id="question2">
+          <a class="boxes-link" href="#question2">
+            ¿Necesito experiencia en programación?
+            <i class="icon ion-md-chevron-down-outline"></i>
+            <i class="icon ion-md-chevron-up-outline"></i>
+          </a>
+          <div class="answer">
+            <p>
+            Para nada. Lo único que necesitas para participar, son muchos ánimos de aprender cosas nuevas.
+            </p>
+          </div>
+        </div>
+
+        <div class="boxes-item" id="question3">
+          <a class="boxes-link" href="#question3">
+            ¿Será todo en línea?
+            <i class="icon ion-md-chevron-down-outline"></i>
+            <i class="icon ion-md-chevron-up-outline"></i>
+          </a>
+          <div class="answer">
+            <p> 
+            Así es. Por el COVID-19 y para cuidar la integridad de todos ustedes, todo se mantendrá en línea. 
+            </p>
+          </div>
+        </div>
+
+        <div class="boxes-item" id="question4">
+          <a class="boxes-link" href="#question4">
+            ¿Cuáles serán los premios?
+            <i class="icon ion-md-chevron-down-outline"></i>
+            <i class="icon ion-md-chevron-up-outline"></i>
+          </a>
+          <div class="answer">
+            <p> 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            </p>
+          </div>
+        </div>
+
+        <div class="boxes-item" id="question5">
+          <a class="boxes-link" href="#question5">
+            ¿De cuántas personas son los equipos? ¿Puedo participar individualmente?
+            <i class="icon ion-md-chevron-down-outline"></i>
+            <i class="icon ion-md-chevron-up-outline"></i>
+          </a>
+          <div class="answer">
+            <p> 
+            Los equipos son mínimo de 2 personas y máximo de 4 personas. Si no tienes equipo formado, puedes entrar individualmente y nosotros te asignaremos a un equipo que esté incompleto.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
     </main>
+
+    
+
 
     <script type="text/javascript">
       $(function() {

@@ -29,6 +29,8 @@ main {
   height: 100vh;
   overflow-y: scroll;
   background-color: inherit;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 }
 
 /* Welcome Section */
@@ -61,13 +63,36 @@ main {
   margin-right: 0;
 }
 
+h1 {
+  font-size: 55px;
+  line-height: 100px;
+  color: #ca289e;
+}
+
 .content {
   min-height: 100%;
   font-size: 40px;
   line-height: 50px;
   text-align: justify;
   color: #fff;
+  margin: 10px;
+  padding: 5px;
 }
+
+.image {  
+  animation-name: image;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  margin-left: 30px;
+  margin-top: 5px;
+}
+
+@keyframes image {
+  from { transform: translate(0,  0px); }
+  65%  { transform: translate(0, 15px); }
+  to   { transform: translate(0, -0px); }    
+} 
 
 .enter-button {
   display: block;
@@ -95,6 +120,79 @@ nav ul {
   text-align: right;
   margin: 0;
   transition: 1s;
+}
+
+.FAQ {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.boxes-item {
+  background-color: #121212;
+  border-radius: .4rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
+}
+
+.boxes-link {
+  font-size: 1.6rem;
+  color: rgba(255,255,255,.8);
+  text-decoration: none;
+  background-color:  #121212;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.boxes-link i {
+  color: #e7d5ff;
+  padding: .5rem;
+}
+
+.boxes-link .ion-md-chevron-up-outline {
+  display: none;
+}
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  background-color: #121212;
+  transition: max-height 650ms;
+}
+
+.answer::before {
+  content: "";
+  position: absolute;
+  width: .6rem;
+  height: 90%;
+  background-color: #000;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.answer p {
+  color: rgba(255,255,255,.6);
+  font-size: 1.4rem;
+  padding: 2rem;
+}
+
+.boxes-item:target .answer {
+  max-height: 20rem;
+}
+
+.boxes-item:target .boxes-item .ion-md-chevron-down-outline {
+  display: none;
+}
+
+.boxes-item:target .boxes-item .ion-md-chevron-up-outline {
+  display: block;
 }
 
 nav.black ul {
@@ -156,4 +254,3 @@ nav ul li a {
   opacity: 0;
   transform: translate3d(0, -30px, 0);
 }
-
